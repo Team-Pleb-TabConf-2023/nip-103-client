@@ -1,0 +1,50 @@
+env:
+  node              : true
+  browser           : true
+  es2021            : true
+
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:react/jsx-runtime
+
+overrides           : []
+
+parser: "@typescript-eslint/parser"
+
+parserOptions:
+  ecmaVersion       : latest
+  ecmaFeatures:
+    jsx: true
+  sourceType        : module
+  project:
+   - ./tsconfig.json
+
+rules:
+  semi               : [ 2, never ]
+  one-var            : off
+  return-await       : off
+  indent             : off
+  no-multi-spaces    : off
+  operator-linebreak : off
+  array-bracket-spacing:
+    - error
+    - always
+  key-spacing:
+    - error
+    - multiLine:
+        beforeColon : false
+        afterColon  : true
+      align:
+        beforeColon : true
+        afterColon  : true
+
+settings:
+  react:
+    version: detect
+
+ignorePatterns:
+  - dist
+  - public
+  - test
+  - vite.config.ts

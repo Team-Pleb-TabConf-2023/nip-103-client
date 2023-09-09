@@ -1,0 +1,43 @@
+{
+  "name": "data-buffet",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "fix": "eslint --fix . --ext .ts",
+    "lint": "eslint . --ext .ts,.tsx",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@cmdcode/buff": "^2.0.2",
+    "@cmdcode/use-nostr": "^0.1.1",
+    "bolt11": "^1.4.1",
+    "nostr-tools": "^1.14.2",
+    "webln": "^0.3.2"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "^2.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@types/node": "^20.1.4",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "@vitejs/plugin-react": "^4.0.4",
+    "eslint": "8.48.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-n": "^16.0.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.0.0",
+    "vite-tsconfig-paths": "^4.0.5"
+  }
+}
